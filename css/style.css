@@ -1,7 +1,7 @@
 body {
   background-color: #363636;
   color: #d2d2d2;
-  font-weight: 4000;
+  font-weight: 400;
   font-size: 14px;
   font-family: "Menlo", "Meslo LG", monospace;
   line-height: 1.725;
@@ -13,6 +13,7 @@ a {
 }
 a:focus,
 a:hover {
+  color: Chocolate;
   text-decoration: underline;
 }
 .footer {
@@ -27,7 +28,7 @@ a:hover {
   width: 100%;
 }
 .hd {
-  width: 55%;
+  width: 50%;
   height: 100%;
   margin: auto;
 }
@@ -40,7 +41,8 @@ a:hover {
   margin-top: 30px;
 }
 .list {
-  font-size: 17px;
+  font-size: 16px;
+  font-style: italic;
   padding-left: 25px;
   padding-right: 25px;
   height: 30px;
@@ -58,12 +60,14 @@ a:hover {
 .breadcrumb {
   padding: 8px 15px;
   list-style: none;
+  font-size: 100%;
+  font-weight: bold;
   background-color: initial;
   border-radius: 0px;
   text-align: center;
 }
 .jing {
-  color: #1e90ff;
+  color: Chocolate;
 }
 .logot {
   font-weight: bold;
@@ -99,13 +103,13 @@ hr {
   border-color: #58606b;
 }
 .posts .replay-btn {
-  background-color: #696969;
+  background-color: #6495ed;
   width: 40px;
   color: #fff;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  border-radius: 80%;
+  border-radius: 100%;
   position: absolute;
 }
 .post-content {
@@ -117,12 +121,12 @@ p {
   font-size: 18px;
   font-weight: 8000;
 }
+a {
+  font-size: 20px;
+}
 li {
   font-size: 17px;
   font-weight: 1000;
-}
-a {
-  font-size: 20px;
 }
 .post-title {
   text-align: center;
@@ -1221,14 +1225,10 @@ label.el-checkbox {
 .breadcrumb>li {
   display: inline-block;
 }
-.breadcrumb a {
-  font-weight: bold;
-  font-size: 90%;
-}
 .breadcrumb>li+li:before {
   padding: 0 5px;
   color: #ccc;
-  content: "|";
+  content: "&\00a0";
 }
 .breadcrumb>.active {
   color: #777;
